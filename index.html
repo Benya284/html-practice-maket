@@ -21,51 +21,66 @@
       <a href="">Sign in</a>
     </header>
     <!--Первая секция, как найти идеальный дом.-->
-    <session>
+    <section>
       <h1>Easy way to find a home that’s perfect for you</h1>
       <p>The find and most trusted marketplace of design & build house in the world.</p>
       <div>
-        <ul>
-          <li><a href="">Rent</a></li>
-          <li><a href="">Buy</a></li>
-          <li><a href="">Sell</a></li>
-        </ul>
-        <table>
-          <tr>
-            <th><img src="./images/location.svg" alt="location logo">Location</th>
-            <th><img src="./images/property.svg" alt="property logo">Property Type</th>
-            <th><img src="./images/price.svg" alt="price logo">Average Price</th>
-          </tr>
-          <tr>
-            <td>Los Angels</td>
-            <td>Delux</td>
-            <td>$7000 - 8000</td>
-          </tr>
-        </table>
-        <a href="">Search</a>
+        <form>
+          <label>
+            <input type="radio" name="type" checked>
+            Rent
+          </label>
+          <label>
+            <input type="radio" name="type">
+            Buy
+          </label>
+          <label>
+            <input type="radio" name="type">
+            Sell
+          </label>
+        </form>
+
+        <form>
+          <label>
+            <img src="./images/location.svg" alt="location logo">
+            Location
+            <input type="text" name="location" placeholder="Los Angels">
+          </label>
+          <label>
+            <img src="./images/property.svg" alt="property logo">
+            Property Type
+            <input type="text" name="property" placeholder="Delux">
+          </label>
+          <label>
+            <img src="./images/price.svg" alt="price logo">
+            Average Price
+            <input type="text" name="price" placeholder="$7000 - 8000">
+          </label>
+        </form>
+        <button type="submit">Search</button>
       </div>
-    </session>
+    </section>
     <!--Вторая секция, наши собственности-->
-    <session>
+    <section>
       <h2>See our properties</h2>
       <p>The modern way to sell/buy/rent your own home.</p>
-      <lu>
+      <ul>
         <li><button type="button"><img src="./images/circle.svg" alt="button">Rent</button></li>
         <li><button type="button"><img src="./images/circle.svg" alt="button">Buy</button></li>
         <li><button type="button"><img src="./images/circle.svg" alt="button">Sell</button></li>
-      </lu>
-      <lu>
+      </ul>
+      <ul>
         <li>
           <article>
             <img src="./images/home_pic1.jpg" alt="example of our properties">
             <h3>Nomaden Omah Sekut</h3>
             <p>San Diego, California, USA</p>
             <p>$699,000</p>
-            <lu>
+            <ul>
               <li>2 Beds</li>
               <li>1 Bath</li>
               <li>1,109 sqft</li>
-            </lu>
+            </ul>
             <a href="">See Details</a>
           </article>
         </li>
@@ -75,11 +90,11 @@
             <h3>Real Bluestyle House</h3>
             <p>San Diego, California, USA</p>
             <p>$10,00,000</p>
-            <lu>
+            <ul>
               <li>3 Beds</li>
               <li>2 Bath</li>
               <li>1,309 sqft</li>
-            </lu>
+            </ul>
             <a href="">See Details</a>
           </article>
         </li>
@@ -89,20 +104,20 @@
             <h3>Luxury Umahu Mantappu</h3>
             <p>San Diego, California, USA</p>
             <p>$599,000</p>
-            <lu>
+            <ul>
               <li>2 Beds</li>
               <li>1 Bath</li>
               <li>1,009 sqft</li>
-            </lu>
+            </ul>
             <a href="">See Details</a>
           </article>
         </li>
-      </lu>
+      </ul>
       <button type="button">←</button>
       <button type="button">→</button>
-    </session>
+    </section>
     <!--Третья секция, о пользе-->
-    <session>
+    <section>
       <img src="./images/home_pic4.jpg" alt="home">
       <h2>See some benefit from our properties</h2>
       <ul>
@@ -122,9 +137,9 @@
           <p>Transparancy is always for customers</p>
         </li>
       </ul>
-    </session>
+    </section>
     <!--Четвертая секция, как обстоят дела в Сан Диего-->
-    <session>
+    <section>
       <h2>What’s happening in San Diego, CA</h2>
       <p>
         Over 30,000+ people work for us and more than 70 total
@@ -132,7 +147,7 @@
         house 3,700 home recently sold 150 price reduceed 2 for 
         elsoures.
       </p>
-      <lu>
+      <ul>
         <li>
           <p>1,850</p>
           <h3>HOMES FOR SALE</h3>
@@ -145,10 +160,10 @@
           <p>12</p>
           <h3>YEARS EXPERIENCE</h3>
         </li>
-      </lu>
-    </session>
+      </ul>
+    </section>
     <!--Пятая секция, отзыв-->
-    <session>
+    <section>
       <p>CLIENT TESTIMONIALS</p>
       <h2>See what says our customer</h2>
       <p>Lorem Ipsum is simply dummy text of the printing and 
@@ -159,9 +174,9 @@
       </p>
       <p>Jon Smith</p>
       <p>Customer</p>
-    </session>
+    </section>
     <!--Шестая секция, связь с нами-->
-    <sesion>
+    <section>
       <h2>Ready to find your next home?</h2>
       <p>It is a long established fact that a reader will be distracted 
         by the readable content of a page when looking at its 
@@ -171,7 +186,7 @@
         <input type="text" name="username">
         <button type="button">Subscribe</button>
       </form>
-    </sesion>
+    </section>
     <!--Подвал страницы-->
     <footer>
       <nav>
@@ -179,40 +194,41 @@
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </p>
-        <lu>
+        <ul>
           <li>
-            <h2>Product</h2>
-            <lu>
+            <h3>Product</h3>
+            <ul>
               <li><a href="">Listing</a></li>
               <li><a href="">Property</a></li>
               <li><a href="">Agents</a></li>
               <li><a href="">Blog</a></li>
-            </lu>
+            </ul>
           </li>
           <li>
-            <h2>Resources</h2>
-            <lu>
+            <h3>Resources</h3>
+            <ul>
               <li><a href="">Our Homes</a></li>
               <li><a href="">Member Stories</a></li>
               <li><a href="">Video</a></li>
               <li><a href="">Free Trail</a></li>
-            </lu>
+            </ul>
           </li>
           <li>
-            <h2>Company</h2>
-            <lu>
+            <h3>Company</h3>
+            <ul>
               <li><a href="">Patnerships</a></li>
               <li><a href="">Terms of use</a></li>
               <li><a href="">Privacy</a></li>
               <li><a href="">Sitemap</a></li>
-            </lu>
+            </ul>
           </li>
-        </lu>
+        </ul>
+        <h3>Get in touch</h3>
+        <p>You’ll find your next home, in
+          any style you prefer.
+        </p>
       </nav>
-      <h2>Get in touch</h2>
-      <p>You’ll find your next home, in
-        any style you prefer.
-      </p>
+
       <p>Copyright Abid Hasan Jilon 2021. All rights reserved</p>
     </footer>
   </body>
