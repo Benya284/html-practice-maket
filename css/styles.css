@@ -1,0 +1,19 @@
+/* Основной цвет текста #021112 
+Вторичный цвет текста #677071*/
+
+body{
+    color:#021112
+}
+
+.list{
+    list-style:none;
+}
+
+.page-nav .link{
+    color:#021112
+}
+
+.page-nav .link:hover,
+.page-nav .link:focus{
+    color:#13A6BA
+}

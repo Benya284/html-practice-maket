@@ -4,195 +4,199 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find a home</title>
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
     <!--Шапка страницы-->
     <header>
-      <nav>
+      <nav class="page-nav">
         <a href="/"><img src="./images/icon.svg" alt="logo"></a>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Listing</a></li>
-          <li><a href="">Property</a></li>
-          <li><a href="">Agents</a></li>
-          <li><a href="">Blog</a></li>
+        <ul class="list">
+          <li><a href="" class="link">Home</a></li>
+          <li><a href="" class="link">Listing</a></li>
+          <li><a href="" class="link">Property</a></li>
+          <li><a href="" class="link">Agents</a></li>
+          <li><a href="" class="link">Blog</a></li>
         </ul>        
       </nav>
       <a href="">Sign in</a>
     </header>
 
-    <!--Первая секция, как найти идеальный дом.-->
-    <section>
-      <h1>Easy way to find a home that’s perfect for you</h1>
-      <p>The find and most trusted marketplace of design & build house in the world.</p>
-      <div>
+    <!--Уникальный блок-->
+    <main>
+      <!--Первая секция, как найти идеальный дом.-->
+      <section>
+        <h1>Easy way to find a home that’s perfect for you</h1>
+        <p>The find and most trusted marketplace of design & build house in the world.</p>
+        <div>
+          <form>
+            <label>
+              <input type="radio" name="type" checked>
+              Rent
+            </label>
+            <label>
+              <input type="radio" name="type">
+              Buy
+            </label>
+            <label>
+              <input type="radio" name="type">
+              Sell
+            </label>
+          </form>
+
+          <form>
+            <label>
+              <img src="./images/location.svg" alt="location logo">
+              Location
+              <input type="text" name="location" placeholder="Los Angels">
+            </label>
+            <label>
+              <img src="./images/property.svg" alt="property logo">
+              Property Type
+              <input type="text" name="property" placeholder="Delux">
+            </label>
+            <label>
+              <img src="./images/price.svg" alt="price logo">
+              Average Price
+              <input type="text" name="price" placeholder="$7000 - 8000">
+            </label>
+          </form>
+          <button type="submit">Search</button>
+        </div>
+      </section>
+
+      <!--Вторая секция, наши собственности-->
+      <section>
+        <h2>See our properties</h2>
+        <p>The modern way to sell/buy/rent your own home.</p>
+        <ul>
+          <li><button type="button"><img src="./images/circle.svg" alt="button">Rent</button></li>
+          <li><button type="button"><img src="./images/circle.svg" alt="button">Buy</button></li>
+          <li><button type="button"><img src="./images/circle.svg" alt="button">Sell</button></li>
+        </ul>
+        <ul>
+          <li>
+            <article>
+              <img src="./images/home_pic1.jpg" alt="example of our properties">
+              <h3>Nomaden Omah Sekut</h3>
+              <p>San Diego, California, USA</p>
+              <p>$699,000</p>
+              <ul>
+                <li>2 Beds</li>
+                <li>1 Bath</li>
+                <li>1,109 sqft</li>
+              </ul>
+              <a href="">See Details</a>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="./images/home_pic2.jpg" alt="example of our properties">
+              <h3>Real Bluestyle House</h3>
+              <p>San Diego, California, USA</p>
+              <p>$10,00,000</p>
+              <ul>
+                <li>3 Beds</li>
+                <li>2 Bath</li>
+                <li>1,309 sqft</li>
+              </ul>
+              <a href="">See Details</a>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="./images/home_pic3.jpg" alt="example of our properties">
+              <h3>Luxury Umahu Mantappu</h3>
+              <p>San Diego, California, USA</p>
+              <p>$599,000</p>
+              <ul>
+                <li>2 Beds</li>
+                <li>1 Bath</li>
+                <li>1,009 sqft</li>
+              </ul>
+              <a href="">See Details</a>
+            </article>
+          </li>
+        </ul>
+        <button type="button">&#8592;</button>
+        <button type="button">&#8594;</button>
+      </section>
+
+      <!--Третья секция, о пользе-->
+      <section>
+        <img src="./images/home_pic4.jpg" alt="home">
+        <h2>See some benefit from our properties</h2>
+        <ul>
+          <li>
+            <img src="./images/icon2.svg" alt="icon">
+            <h3>100& Protection</h3>
+            <p>All secure protection for your future house</p>
+          </li>
+          <li>
+            <img src="./images/icon3.svg" alt="icon">
+            <h3>Top Tier House</h3>
+            <p>We just provide top tier house for you</p>
+          </li>
+          <li>
+            <img src="./images/icon4.svg" alt="icon">
+            <h3>Transparancy</h3>
+            <p>Transparancy is always for customers</p>
+          </li>
+        </ul>
+      </section>
+
+      <!--Четвертая секция, как обстоят дела в Сан Диего-->
+      <section>
+        <h2>What’s happening in San Diego, CA</h2>
+        <p>
+          Over 30,000+ people work for us and more than 70 total
+          countries all over the world, 1,850 homes for sale 2 open 
+          house 3,700 home recently sold 150 price reduceed 2 for 
+          elsoures.
+        </p>
+        <ul>
+          <li>
+            <p>1,850</p>
+            <h3>HOMES FOR SALE</h3>
+          </li>
+          <li>
+            <p>3,700</p>
+            <h3>RECENTLY SOLD</h3>
+          </li>
+          <li>
+            <p>12</p>
+            <h3>YEARS EXPERIENCE</h3>
+          </li>
+        </ul>
+      </section>
+
+      <!--Пятая секция, отзыв-->
+      <section>
+        <p>CLIENT TESTIMONIALS</p>
+        <h2>See what says our customer</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and 
+          typesetting industry. Lorem Ipsum has been the industry's 
+          standard dummy text ever since the 1500s, when an 
+          unknown printer took a galley of type and scrambled it to 
+          make a type specimen book.
+        </p>
+        <p>Jon Smith</p>
+        <p>Customer</p>
+      </section>
+
+      <!--Шестая секция, связь с нами-->
+      <section>
+        <h2>Ready to find your next home?</h2>
+        <p>It is a long established fact that a reader will be distracted 
+          by the readable content of a page when looking at its 
+          layout. The point of using Lorem Ipsum
+        </p>
         <form>
-          <label>
-            <input type="radio" name="type" checked>
-            Rent
-          </label>
-          <label>
-            <input type="radio" name="type">
-            Buy
-          </label>
-          <label>
-            <input type="radio" name="type">
-            Sell
-          </label>
+          <input type="text" name="username" placeholder="Enter your email">
+          <button type="button">Subscribe</button>
         </form>
-
-        <form>
-          <label>
-            <img src="./images/location.svg" alt="location logo">
-            Location
-            <input type="text" name="location" placeholder="Los Angels">
-          </label>
-          <label>
-            <img src="./images/property.svg" alt="property logo">
-            Property Type
-            <input type="text" name="property" placeholder="Delux">
-          </label>
-          <label>
-            <img src="./images/price.svg" alt="price logo">
-            Average Price
-            <input type="text" name="price" placeholder="$7000 - 8000">
-          </label>
-        </form>
-        <button type="submit">Search</button>
-      </div>
-    </section>
-
-    <!--Вторая секция, наши собственности-->
-    <section>
-      <h2>See our properties</h2>
-      <p>The modern way to sell/buy/rent your own home.</p>
-      <ul>
-        <li><button type="button"><img src="./images/circle.svg" alt="button">Rent</button></li>
-        <li><button type="button"><img src="./images/circle.svg" alt="button">Buy</button></li>
-        <li><button type="button"><img src="./images/circle.svg" alt="button">Sell</button></li>
-      </ul>
-      <ul>
-        <li>
-          <article>
-            <img src="./images/home_pic1.jpg" alt="example of our properties">
-            <h3>Nomaden Omah Sekut</h3>
-            <p>San Diego, California, USA</p>
-            <p>$699,000</p>
-            <ul>
-              <li>2 Beds</li>
-              <li>1 Bath</li>
-              <li>1,109 sqft</li>
-            </ul>
-            <a href="">See Details</a>
-          </article>
-        </li>
-        <li>
-          <article>
-            <img src="./images/home_pic2.jpg" alt="example of our properties">
-            <h3>Real Bluestyle House</h3>
-            <p>San Diego, California, USA</p>
-            <p>$10,00,000</p>
-            <ul>
-              <li>3 Beds</li>
-              <li>2 Bath</li>
-              <li>1,309 sqft</li>
-            </ul>
-            <a href="">See Details</a>
-          </article>
-        </li>
-        <li>
-          <article>
-            <img src="./images/home_pic3.jpg" alt="example of our properties">
-            <h3>Luxury Umahu Mantappu</h3>
-            <p>San Diego, California, USA</p>
-            <p>$599,000</p>
-            <ul>
-              <li>2 Beds</li>
-              <li>1 Bath</li>
-              <li>1,009 sqft</li>
-            </ul>
-            <a href="">See Details</a>
-          </article>
-        </li>
-      </ul>
-      <button type="button">&#8592;</button>
-      <button type="button">&#8594;</button>
-    </section>
-
-    <!--Третья секция, о пользе-->
-    <section>
-      <img src="./images/home_pic4.jpg" alt="home">
-      <h2>See some benefit from our properties</h2>
-      <ul>
-        <li>
-          <img src="./images/icon2.svg" alt="icon">
-          <h3>100& Protection</h3>
-          <p>All secure protection for your future house</p>
-        </li>
-        <li>
-          <img src="./images/icon3.svg" alt="icon">
-          <h3>Top Tier House</h3>
-          <p>We just provide top tier house for you</p>
-        </li>
-        <li>
-          <img src="./images/icon4.svg" alt="icon">
-          <h3>Transparancy</h3>
-          <p>Transparancy is always for customers</p>
-        </li>
-      </ul>
-    </section>
-
-    <!--Четвертая секция, как обстоят дела в Сан Диего-->
-    <section>
-      <h2>What’s happening in San Diego, CA</h2>
-      <p>
-        Over 30,000+ people work for us and more than 70 total
-        countries all over the world, 1,850 homes for sale 2 open 
-        house 3,700 home recently sold 150 price reduceed 2 for 
-        elsoures.
-      </p>
-      <ul>
-        <li>
-          <p>1,850</p>
-          <h3>HOMES FOR SALE</h3>
-        </li>
-        <li>
-          <p>3,700</p>
-          <h3>RECENTLY SOLD</h3>
-        </li>
-        <li>
-          <p>12</p>
-          <h3>YEARS EXPERIENCE</h3>
-        </li>
-      </ul>
-    </section>
-
-    <!--Пятая секция, отзыв-->
-    <section>
-      <p>CLIENT TESTIMONIALS</p>
-      <h2>See what says our customer</h2>
-      <p>Lorem Ipsum is simply dummy text of the printing and 
-        typesetting industry. Lorem Ipsum has been the industry's 
-        standard dummy text ever since the 1500s, when an 
-        unknown printer took a galley of type and scrambled it to 
-        make a type specimen book.
-      </p>
-      <p>Jon Smith</p>
-      <p>Customer</p>
-    </section>
-
-    <!--Шестая секция, связь с нами-->
-    <section>
-      <h2>Ready to find your next home?</h2>
-      <p>It is a long established fact that a reader will be distracted 
-        by the readable content of a page when looking at its 
-        layout. The point of using Lorem Ipsum
-      </p>
-      <form>
-        <input type="text" name="username" placeholder="Enter your email">
-        <button type="button">Subscribe</button>
-      </form>
-    </section>
+      </section>
+    </main>
 
     <!--Подвал страницы-->
     <footer>
