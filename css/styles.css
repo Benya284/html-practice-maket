@@ -1,19 +1,81 @@
 /* Основной цвет текста #021112 
-Вторичный цвет текста #677071*/
+Вторичный цвет текста #677071
+Цвет акцента #13A6BA
+Цвет фона #FBEDDA 
+Цвет фона2 #ffffff */
 
-body{
-    color:#021112
+:root{
+    --primary-text-color:#021112;
+    --second-text-color: #677071;
+
+    --background-color1:#FBEDDA;
+    --background-color2:#ffffff;
+
+    --accent-color1:#13A6BA;
+
+    --anti-accent-color1:#CCCFD0;
 }
 
+body{
+    color:var(--primary-text-color);
+    background-color:var(--background-color1);
+}
+
+/* page nav */
 .list{
     list-style:none;
 }
-
-.page-nav .link{
-    color:#021112
+.link{
+    color:var(--primary-text-color);
 }
 
-.page-nav .link:hover,
-.page-nav .link:focus{
-    color:#13A6BA
+.list .link:hover,
+.list .link:focus{
+    color:var(--accent-color1);
+}
+
+ /* batton */
+.button{
+    color:var(--background-color2);
+    background-color:var(--accent-color1);
+}
+
+.button.secondary{
+    color:var(--accent-color1);
+    background-color:var(--background-color2);
+}
+/*  */
+.hero .text{
+    color:var(--second-text-color);
+}
+
+.properties{
+    background-color:var(--background-color2);
+}
+.properties .text{
+    color:var(--second-text-color);
+}
+
+/* properties button */
+.key{
+    color:var(--anti-accent-color1);
+}
+.key.primary{
+    color:#772D8B;
+}
+/*  */
+.article .text{
+    color:var(--second-text-color);
+}
+
+.article .text2{
+    color:var(--anti-accent-color1);
+}
+
+.benefit{
+    background-color:var(--background-color2);
+}
+
+.benefit .text{
+    color:var(--second-text-color)
 }
