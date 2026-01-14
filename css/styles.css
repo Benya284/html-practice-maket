@@ -18,9 +18,12 @@
 
 body{
     color:var(--primary-text-color);
-    background-color:var(--background-color1);
+    background-color:var(--background-color2);
 }
 
+.cap{
+    background-color:var(--background-color1);
+}
 /* page nav */
 .list{
     list-style:none;
@@ -29,8 +32,8 @@ body{
     color:var(--primary-text-color);
 }
 
-.list .link:hover,
-.list .link:focus{
+.cap .link:hover,
+.cap .link:focus{
     color:var(--accent-color1);
 }
 
@@ -45,13 +48,14 @@ body{
     background-color:var(--background-color2);
 }
 /*  */
+.hero{
+    background-color:var(--background-color1);
+}
 .hero .text{
     color:var(--second-text-color);
 }
 
-.properties{
-    background-color:var(--background-color2);
-}
+
 .properties .text{
     color:var(--second-text-color);
 }
@@ -72,10 +76,41 @@ body{
     color:var(--anti-accent-color1);
 }
 
-.benefit{
-    background-color:var(--background-color2);
+.benefit .text{
+    color:var(--second-text-color);
 }
 
-.benefit .text{
-    color:var(--second-text-color)
+
+
+.diego .text{
+    color:var(--second-text-color);
 }
+
+
+.comment{
+    background-color:var(--background-color1);
+}
+
+.comment .text-accent{
+    color:var(--accent-color1);
+}
+
+.comment .text{
+    color:var(--second-text-color);
+}
+
+.conn .text{
+    color:var(--second-text-color);
+}
+
+
+.footer .text{
+    color:var(--second-text-color);
+}
+ .footer .link{
+    color:var(--primary-text-color);
+ }
+
+
+
+
