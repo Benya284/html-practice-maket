@@ -17,11 +17,13 @@
 }
 
 body{
+    font-family: 'Noto Serif', serif;
+    font-weight: 400;
     color:var(--primary-text-color);
     background-color:var(--background-color2);
 }
 
-.cap{
+.header{
     background-color:var(--background-color1);
 }
 /* page nav */
@@ -32,8 +34,8 @@ body{
     color:var(--primary-text-color);
 }
 
-.cap .link:hover,
-.cap .link:focus{
+.header-link:hover,
+.header-link:focus{
     color:var(--accent-color1);
 }
 
@@ -51,12 +53,16 @@ body{
 .hero{
     background-color:var(--background-color1);
 }
-.hero .text{
+.hero-title{
+    font-family: 'Noto Serif', serif;
+    font-weight: 800;
+}
+.hero-after-title{
     color:var(--second-text-color);
 }
 
 
-.properties .text{
+.properties-text{
     color:var(--second-text-color);
 }
 
@@ -68,11 +74,11 @@ body{
     color:#772D8B;
 }
 /*  */
-.article .text{
+.properties-article-text{
     color:var(--second-text-color);
 }
 
-.article .text2{
+.properties-item-list{
     color:var(--anti-accent-color1);
 }
 
