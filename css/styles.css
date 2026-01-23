@@ -81,14 +81,19 @@ body{
 .properties-item-list{
     color:var(--anti-accent-color1);
 }
+/* */
 
-.benefit .text{
+.benefit-text{
     color:var(--second-text-color);
 }
 
 
 
-.diego .text{
+.diego-text{
+    color:var(--second-text-color);
+}
+
+.diego-item-title{
     color:var(--second-text-color);
 }
 
